@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <p>First Number: <input id="firstnumber" onblur="calculate()"></p>
+        <p>Second Number: <input id="secondnumber" onblur="calculate()"></p>
+        <div class="answer-box">
+            <div class="answer">
+                <span id="addition"></span>
+            </div>
+            <div class="answer">
+                <span id="subtraction"></span>
+            </div>
+            <div class="answer">
+                <span id="multiplication"></span>
+            </div>
+            <div class="answer">
+                <span id="division"></span>
+            </div>
+        </div>
+    </div>
+    <div id="alert" class="alert"></div>
+</body>
+</html>
