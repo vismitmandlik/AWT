@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+    }
+    </style>
+    <script type="text/javascript">    </script>
+</head>
+<body>
+    <div class="container">
+        <form>
+
+            <div>
+                <label for="name">Enter your Full Name :</label>
+                <br>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="15" size="30">
+                <br><br>
+            </div>
+
+            <div>
+                <label for="username">Enter Username :</label>
+                <br>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="15" size="30">
+                <br><br>
+            </div>
+
+            <div>
+                <label for="pass">Password (8 characters minimum):</label>
+                <br>
+                <input type="password" id="pass" name="password" minlength="8" required size="30">
+                <br><br>
+            </div>
+            
+            <div>
+                <label for="male">Select your gender : </label>
+                <br>
+                <input type="radio" id="male" name="drone" value="male" checked>
+                <label for="male">Male</label>
+                <br>
+            </div>
+        
+            <div>
+                <input type="radio" id="female" name="drone" value="female">
+                <label for="female">Female</label>
+                <br>
+            </div>
+        
+            <div>
+                <input type="radio" id="Prefer not to say" name="drone" value="Prefer not to say">
+                <label for="Prefer not to say">Prefer not to say</label>
+                <br><br>
+            </div>
+            
+            <div>
+                <label for="phone">Enter your phone number:</label>
+                <br>
+                <input type="number" id="phone" name="phone" pattern="(9)(1).{2,}" required>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="email">Enter your charusat.edu.in email:</label>
+                <br>
+                <input type="email" id="email"
+                pattern=".+@charusat\.edu\.in" size="30" required>
+                <br><br>
+            </div>
+
+            <div>
+                <select>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="GA">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="GA">Goa</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UT">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DN">Dadra and Nagar Haveli</option>
+                    <option value="DD">Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+                </select>
+                <br><br>
+            </div>
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" required>
+                <label for="checkbox"> I agree to these <a href="https://www.charusat.ac.in/">Terms and Conditions</a>.</label>
+                <br><br>
+            </div>
+
+            <input type="button" onclick="validateForm(this)" value="Sign in">
+
+        </form>
+    </div>
+        
+</body>
+<script src="./script.js"></script>
+</html>
